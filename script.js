@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (isActive) {
         history.replaceState(null, '', `#${name}`);
       }
+      
     });
     tabButtons.forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === name)));
   }
